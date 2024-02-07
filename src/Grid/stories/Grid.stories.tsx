@@ -1,6 +1,6 @@
-import { Grid, IGridProps } from "..";
-import { props } from "../props";
 import { StyledSquare } from "./stories.styles";
+import { props } from "../props";
+import { Grid, IGridProps } from "..";
 
 const story = {
   title: "layout/Grid",

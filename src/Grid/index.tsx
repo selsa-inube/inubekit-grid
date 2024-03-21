@@ -1,34 +1,34 @@
 import {
-  AlignContent,
-  AlignItems,
-  AutoFlow,
-  Height,
-  JustifyContent,
-  JustifyItems,
-  Width,
+  IGridAlignContent,
+  IGridAlignItems,
+  IGridAutoFlow,
+  IGridHeight,
+  IGridJustifyContent,
+  IGridJustifyItems,
+  IGridWidth,
 } from "./props";
 
 import { StyledGrid } from "./styles";
 
-export interface IGridProps {
+interface IGrid {
   templateColumns?: string;
   templateRows?: string;
   gap?: string;
-  justifyItems?: JustifyItems;
-  alignItems?: AlignItems;
-  justifyContent?: JustifyContent;
-  alignContent?: AlignContent;
+  justifyItems?: IGridJustifyItems;
+  alignItems?: IGridAlignItems;
+  justifyContent?: IGridJustifyContent;
+  alignContent?: IGridAlignContent;
   autoColumns?: string;
   autoRows?: string;
-  autoFlow?: AutoFlow;
+  autoFlow?: IGridAutoFlow;
   margin?: string;
   padding?: string;
-  height?: Height;
-  width?: Width;
+  height?: IGridHeight;
+  width?: IGridWidth;
   children: React.ReactNode;
 }
 
-export const Grid = (props: IGridProps) => {
+const Grid = (props: IGrid) => {
   const {
     templateColumns = "auto",
     templateRows = "auto",
@@ -68,3 +68,6 @@ export const Grid = (props: IGridProps) => {
     </StyledGrid>
   );
 };
+
+export { Grid };
+export type { IGrid };

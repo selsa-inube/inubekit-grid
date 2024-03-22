@@ -1,4 +1,4 @@
-export const justifyItemsProperties = [
+const justifyItemsProperties = [
   "center",
   "start",
   "end",
@@ -21,9 +21,9 @@ export const justifyItemsProperties = [
   "legacy left",
   "legacy center",
 ] as const;
-export type JustifyItems = (typeof justifyItemsProperties)[number];
+type IGridJustifyItems = (typeof justifyItemsProperties)[number];
 
-export const alignItemsProperties = [
+const alignItemsProperties = [
   "center",
   "start",
   "end",
@@ -42,9 +42,9 @@ export const alignItemsProperties = [
   "revert-layer",
   "unset",
 ] as const;
-export type AlignItems = (typeof alignItemsProperties)[number];
+type IGridAlignItems = (typeof alignItemsProperties)[number];
 
-export const justifyContentProperties = [
+const justifyContentProperties = [
   "flex-start",
   "flex-end",
   "center",
@@ -62,9 +62,9 @@ export const justifyContentProperties = [
   "stretch",
   "normal",
 ] as const;
-export type JustifyContent = (typeof justifyContentProperties)[number];
+type IGridJustifyContent = (typeof justifyContentProperties)[number];
 
-export const alignContentProperties = [
+const alignContentProperties = [
   "baseline",
   "flex-start",
   "flex-end",
@@ -81,34 +81,34 @@ export const alignContentProperties = [
   "stretch",
   "normal",
 ] as const;
-export type AlignContent = (typeof alignContentProperties)[number];
+type IGridAlignContent = (typeof alignContentProperties)[number];
 
-export const autoFlowProperties = [
+const autoFlowProperties = [
   "row",
   "column",
   "dense",
   "row dense",
   "column dense",
 ] as const;
-export type AutoFlow = (typeof autoFlowProperties)[number];
+type IGridAutoFlow = (typeof autoFlowProperties)[number];
 
-export const heightProperties = [
+const heightProperties = [
   "max-content",
   "min-content",
   "fit-content",
   "auto",
 ] as const;
-export type Height = (typeof heightProperties)[number];
+type IGridHeight = (typeof heightProperties)[number];
 
-export const widthProperties = [
+const widthProperties = [
   "max-content",
   "min-content",
   "fit-content",
   "auto",
 ] as const;
-export type Width = (typeof widthProperties)[number];
+type IGridWidth = (typeof widthProperties)[number];
 
-export const props = {
+const props = {
   children: {
     options: "",
     control: { type: "string" },
@@ -240,4 +240,14 @@ export const props = {
       defaultValue: { summary: "s0" },
     },
   },
+};
+export { props };
+export type {
+  IGridJustifyContent,
+  IGridAlignItems,
+  IGridAutoFlow,
+  IGridHeight,
+  IGridWidth,
+  IGridAlignContent,
+  IGridJustifyItems,
 };

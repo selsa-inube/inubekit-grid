@@ -9,6 +9,10 @@
 - Update inubekit/grid to storybook v8 [#2](https://github.com/selsa-inube/inubekit-grid/pull/2) ([@cmarin001](https://github.com/cmarin001))
 - Adjust publish Grid inubekit repo [#1](https://github.com/selsa-inube/inubekit-grid/pull/1) ([@Andresbl123](https://github.com/Andresbl123))
 
+#### ⚠️ Pushed to `main`
+
+- fix(grid): change exports in order to follow the standard ([@cmarin001](https://github.com/cmarin001))
+
 #### Authors: 3
 
 - Andres ([@Andresbl123](https://github.com/Andresbl123))

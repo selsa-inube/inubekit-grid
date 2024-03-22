@@ -1,6 +1,6 @@
 import { StyledSquare } from "./stories.styles";
 import { props } from "../props";
-import { Grid, IGridProps } from "..";
+import { Grid, IGrid } from "..";
 
 const story = {
   title: "layout/Grid",
@@ -8,7 +8,7 @@ const story = {
   argTypes: props,
 };
 
-export const Default = (args: IGridProps) => (
+const Default = (args: IGrid) => (
   <Grid {...args}>
     <StyledSquare>Item 1</StyledSquare>
     <StyledSquare>Item 2</StyledSquare>
@@ -33,4 +33,5 @@ Default.args = {
   width: "auto",
 };
 
+export { Default };
 export default story;

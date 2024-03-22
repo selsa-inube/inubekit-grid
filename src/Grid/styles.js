@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { inube } from "@inubekit/foundations";
 
-export const StyledGrid = styled.div`
+const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: ${({ $templateColumns }) => $templateColumns};
   grid-template-rows: ${({ $templateRows }) => $templateRows};
@@ -28,3 +28,5 @@ export const StyledGrid = styled.div`
   height: ${({ $height }) => $height};
   width: ${({ $width }) => $width};
 `;
+
+export { StyledGrid };

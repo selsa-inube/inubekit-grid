@@ -1,3 +1,26 @@
+# v1.1.0 (Fri Mar 22 2024)
+
+#### 🚀 Enhancement
+
+- Adjust and export interfaces [#3](https://github.com/selsa-inube/inubekit-grid/pull/3) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+#### 🐛 Bug Fix
+
+- Update inubekit/grid to storybook v8 [#2](https://github.com/selsa-inube/inubekit-grid/pull/2) ([@cmarin001](https://github.com/cmarin001))
+- Adjust publish Grid inubekit repo [#1](https://github.com/selsa-inube/inubekit-grid/pull/1) ([@Andresbl123](https://github.com/Andresbl123))
+
+#### ⚠️ Pushed to `main`
+
+- fix(grid): change exports in order to follow the standard ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 3
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+---
+
 # v0.0.2 (Wed Feb 07 2024)
 
 #### ⚠️ Pushed to `main`

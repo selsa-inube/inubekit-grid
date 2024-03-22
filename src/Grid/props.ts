@@ -241,6 +241,7 @@ const props = {
     },
   },
 };
+
 export { props };
 export type {
   IGridJustifyContent,

@@ -18,7 +18,7 @@ const Default = (args: IGrid) => (
 
 Default.args = {
   templateColumns: "repeat(3, 1fr)",
-  gap: "s350",
+  gap: "28px",
   templateRows: "auto",
   justifyItems: "start",
   alignItems: "start",
@@ -27,8 +27,8 @@ Default.args = {
   autoColumns: "auto",
   autoRows: "auto",
   autoFlow: "row",
-  margin: "s0",
-  padding: "s0",
+  margin: "0px",
+  padding: "0px",
   height: "auto",
   width: "auto",
 };

@@ -1,3 +1,19 @@
+# v2.0.0 (Tue Apr 02 2024)
+
+#### 💥 Breaking Change
+
+- Fix width and height typing and add auto-shipit [#5](https://github.com/selsa-inube/inubekit-grid/pull/5) ([@cmarin001](https://github.com/cmarin001))
+
+#### 📝 Documentation
+
+- Publish new version 1.1.0 [#4](https://github.com/selsa-inube/inubekit-grid/pull/4) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v1.1.0 (Fri Mar 22 2024)
 
 #### 🚀 Enhancement

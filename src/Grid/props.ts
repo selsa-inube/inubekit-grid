@@ -92,22 +92,6 @@ const autoFlowProperties = [
 ] as const;
 type IGridAutoFlow = (typeof autoFlowProperties)[number];
 
-const heightProperties = [
-  "max-content",
-  "min-content",
-  "fit-content",
-  "auto",
-] as const;
-type IGridHeight = (typeof heightProperties)[number];
-
-const widthProperties = [
-  "max-content",
-  "min-content",
-  "fit-content",
-  "auto",
-] as const;
-type IGridWidth = (typeof widthProperties)[number];
-
 const props = {
   children: {
     options: "",
@@ -208,8 +192,7 @@ const props = {
   },
 
   height: {
-    options: heightProperties,
-    control: { type: "select" },
+    type: { name: "string", required: false },
     description: "Controls the height of the grid.",
     table: {
       defaultValue: { summary: "auto" },
@@ -217,8 +200,7 @@ const props = {
   },
 
   width: {
-    options: widthProperties,
-    control: { type: "select" },
+    type: { name: "string", required: false },
     description: "Controls the width of the grid.",
     table: {
       defaultValue: { summary: "auto" },
@@ -247,8 +229,6 @@ export type {
   IGridJustifyContent,
   IGridAlignItems,
   IGridAutoFlow,
-  IGridHeight,
-  IGridWidth,
   IGridAlignContent,
   IGridJustifyItems,
 };

@@ -5,12 +5,12 @@ const StyledSquare = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${inube.color.surface.gray.regular};
+  background-color: ${inube.palette.neutral.N30};
   border-radius: 4px;
   padding: 3px;
   height: 50px;
   width: 100%;
-  color: ${inube.color.text.light.regular};
+  color: ${inube.palette.neutral.N100};
 `;
 
 export { StyledSquare };

@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { inube } from "@inubekit/foundations";
-
 const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: ${({ $templateColumns }) => $templateColumns};
